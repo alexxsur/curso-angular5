@@ -5,17 +5,27 @@ import { Component } from '@angular/core';
     templateUrl: './videojuegos.component.html'
 })
 export class VideojuegosComponent{
-    public nombre = 'Videojuegos 2018';
-    public mejor_juego = 'GTA 5';
-    public mejor_juego_retro = 'Super Mario 64';
-    public mostrar_retro = true;
-    public color = "yellow";
+    public nombre:string;
+    public mejor_juego:string;
+    public mejor_juego_retro:string;
+    public mostrar_retro:boolean;
+    public color:string;
+    public year:number;
+    public videojuegos:Array<string>;
 
-    public videojuegos = [
-        'Los Simpsons hit and run',
-        'Assains creed',
-        'GTA 5',
-        'Call of Duty',
-        'Tekken'
-    ];
+    constructor(){
+        this.nombre = 'Videojuegos 2018';
+        this.mejor_juego = 'GTA 5';
+        this.mejor_juego_retro = 'Super Mario 64';
+        this.mostrar_retro = true;
+        this.color = "yellow";
+        this.year = 2018;
+        this.videojuegos = [
+            'Los Simpsons hit and run',
+            'Assains creed',
+            'GTA 5',
+            'Call of Duty',
+            'Tekken'
+        ];
+    }
 }
