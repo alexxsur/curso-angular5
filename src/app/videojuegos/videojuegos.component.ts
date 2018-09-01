@@ -11,7 +11,7 @@ export class VideojuegosComponent{
     public mostrar_retro:boolean;
     public color:string;
     public year:number;
-    public videojuegos:Array<string>;
+    public videojuegos:Array<any>;
 
     constructor(){
         this.nombre = 'Videojuegos 2018';
@@ -25,7 +25,8 @@ export class VideojuegosComponent{
             'Assains creed',
             'GTA 5',
             'Call of Duty',
-            'Tekken'
+            'Tekken',
+            777
         ];
     }
 }
