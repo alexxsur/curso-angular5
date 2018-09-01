@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
         *ngIf="mostrar_retro">
         El juego retro: {{mejor_juego_retro}}
     </h3>
+
+    <h2>Listado de videojuegos</h2>
+        <ul>
+            <li *ngFor="let game of videojuegos"> {{game}}</li>
+        </ul>
     `
 })
 export class VideojuegosComponent{
@@ -17,4 +22,12 @@ export class VideojuegosComponent{
     public mejor_juego_retro = 'Super Mario 64';
     public mostrar_retro = true;
     public color = "yellow";
+
+    public videojuegos = [
+        'Los Simpsons hit and run',
+        'Assains creed',
+        'GTA 5',
+        'Call of Duty',
+        'Tekken'
+    ];
 }
